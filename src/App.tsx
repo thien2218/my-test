@@ -1,5 +1,3 @@
-import "./styles/index.scss";
-
 function App() {
 	return <div>Hello World!</div>;
 }
