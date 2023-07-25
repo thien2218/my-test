@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./spacing";
+@import "./signup";
 
 // Andy Bell CSS Reset
 // https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421
@@ -42,11 +43,15 @@ body {
    font-weight: $font-base;
    line-height: $leading-normal;
    text-rendering: optimizeSpeed;
+   max-width: 100vw;
+   overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
    text-decoration-skip-ink: auto;
+   text-decoration: none;
+   color: inherit;
 }
 
 /* Make images easier to work with */
@@ -125,3 +130,23 @@ svg {
 
 .leading-tight { line-height: $leading-tight; }
 .leading-normal { line-height: $leading-normal; }
+
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+
+.relative { position: relative; }
+.sticky { position: sticky; }
+.fixed { position: fixed; }
+.absolute { position: absolute; }
+
+/* Classes */
+.footer {
+   display: flex;
+   justify-content: space-between;
+   color: $color-neutral-400;
+}
+
+.footer__nav {
+   display: flex;
+   gap: 52px;
+}
