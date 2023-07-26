@@ -150,3 +150,13 @@ svg {
    display: flex;
    gap: 52px;
 }
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar__item {
+   font-weight: $font-bold;
+   text-transform: uppercase;
+}
