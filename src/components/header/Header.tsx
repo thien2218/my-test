@@ -4,14 +4,13 @@ import {
 	ProfileIcon,
 	SignupIcon,
 	SigninIcon,
-} from "../../assets/icons";
+} from "../../assets/Icons";
 import NavItem from "./NavItem";
 
 type Variant = { variant: "light" | "dark" };
 
 const Header = ({ variant }: Variant) => {
-	const textColor =
-		variant === "light" ? "text-secondary" : "text-neutral-700";
+	const textColor = variant === "light" ? "text-secondary" : "text-gray-700";
 
 	return (
 		<nav className="navbar px-6 py-4">
@@ -68,6 +67,13 @@ const Header = ({ variant }: Variant) => {
 					</NavItem>
 				</li>
 			</ul>
+
+			<button
+				style={{ minWidth: "150px" }}
+				className="btn btn-secondary rounded-full px-2 py-2.5"
+			>
+				Free Download
+			</button>
 		</nav>
 	);
 };
