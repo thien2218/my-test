@@ -37,8 +37,8 @@ const Signup = () => {
 					your project for free.
 				</p>
 
-				<div className="py-6 my-6 w-full">
-					<Form shadow="shadow-lg" fields={fields}>
+				<div className="signup__form-container py-6 my-6 w-full">
+					<Form formType="Sign up" fields={fields}>
 						<RegisterWith />
 					</Form>
 				</div>

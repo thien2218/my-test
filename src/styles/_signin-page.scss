@@ -1,0 +1,22 @@
+.signin__banner {
+   top: 0;
+   right: 0;
+   transform: translate(24px, -24px);
+   border-bottom-left-radius: 25px;
+   height: 85%;
+   aspect-ratio: 1;
+   overflow: hidden;
+   background-image: url(/banner-image2.png);
+   background-size: 210%;
+   background-position: center;
+   z-index: -1;
+}
+
+.signin__container {
+   max-width: 1024px;
+   margin-inline: auto;
+}
+
+.signin__form-container {
+   max-width: calc(350px + 72px);
+}

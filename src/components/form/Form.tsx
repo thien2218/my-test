@@ -8,13 +8,15 @@ import { Link } from "react-router-dom";
 type FormProps = {
 	children: ReactNode;
 	fields: InputProps[];
-	shadow: "shadow-none" | "shadow-lg";
+	formType: "Sign up" | "Sign in";
 };
 
-const Form = ({ children, fields, shadow }: FormProps) => {
+const Form = ({ children, fields, formType }: FormProps) => {
+	const shadow = formType === "Sign up" ? "shadow-lg" : "shadow-none";
+
 	return (
-		<Card className={`p-9 signup__form-container ${shadow}`}>
-			<form className="signup__form flow-y-6 mx-4">
+		<Card className={`p-9 ${shadow}`}>
+			<form style={{ maxWidth: "350px" }} className="flow-y-6 mx-4">
 				{children}
 
 				{fields.map((field) => (
@@ -39,13 +41,13 @@ const Form = ({ children, fields, shadow }: FormProps) => {
 					style={{ textTransform: "uppercase" }}
 					className="text-xs font-bold text-secondary bg-primary w-full rounded py-4 px-2"
 				>
-					Sign up
+					{formType}
 				</button>
 
-				<p>
-					Already have an account?
+				<p className="text-gray-400">
+					{formType === "Sign up" ? "Already" : "Don't"} have an account?
 					<Link to="/signin">
-						<span className="font-bold text-primary"> Sign in</span>
+						<span className="font-bold text-primary"> {formType}</span>
 					</Link>
 				</p>
 			</form>
