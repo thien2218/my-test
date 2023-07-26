@@ -69,6 +69,7 @@ const Header = ({ variant }: Variant) => {
 			</ul>
 
 			<button
+				type="button"
 				style={{ minWidth: "150px" }}
 				className="btn btn-secondary rounded-full px-2 py-2.5"
 			>

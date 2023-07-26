@@ -8,7 +8,7 @@ export type InputProps = {
 
 const Input = ({ id, placeholder, type }: InputProps) => {
 	return (
-		<div className="input">
+		<div>
 			<Label.Root htmlFor={id} className="input__label">
 				{id}
 			</Label.Root>

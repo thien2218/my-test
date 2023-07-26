@@ -36,7 +36,7 @@ const Signup = () => {
 					your project for free.
 				</p>
 
-				<div className="py-6 my-6 card-signup__container">
+				<div className="py-6 my-6">
 					<Form shadow="shadow-lg" fields={fields}>
 						<RegisterWith />
 					</Form>

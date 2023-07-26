@@ -210,22 +210,28 @@ button:hover {
    @extend .text-secondary;
 }
 
-// Card
-.card-signup__container {
-   @extend .w-full;
-   max-width: 450px;
-}
-
 // Input
-.input {
-   @extend .w-full;
-   max-width: 350px;
-   margin-inline: auto;
-}
-
 .input__label {
    @extend .ml-1;
    text-transform: capitalize;
    display: block;
    max-width: max-content;
 }
+
+// Switch
+.switch {
+   width: 36px;
+   height: 18px;
+}
+
+.switch__thumb {
+   display: block;
+   width: 14px;
+   height: 14px;
+   transition: transform 250ms;
+   transform: translateX(2px);
+   will-change: transform;
+}
+.switch__thumb[data-state='checked'] {
+   transform: translateX(20px);
+ }

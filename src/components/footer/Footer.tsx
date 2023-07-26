@@ -3,7 +3,7 @@ const Footer = () => {
 		<div className="w-full footer">
 			<p>
 				© 2022, Made with ❤️ by
-				<span className="text-primary font-bold">Tektorch</span> for a
+				<span className="text-primary font-bold"> Tektorch</span> for a
 				better web
 			</p>
 
