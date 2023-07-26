@@ -1,13 +1,13 @@
 const Footer = () => {
 	return (
-		<div className="w-full footer">
+		<div className="w-full flex justify-between text-gray-400">
 			<p>
 				© 2022, Made with ❤️ by
 				<span className="text-primary font-bold"> Tektorch</span> for a
 				better web
 			</p>
 
-			<ul className="footer__nav" role="list">
+			<ul className="flex" style={{ gap: "52px" }} role="list">
 				<li>
 					<a href="/">About Us</a>
 				</li>

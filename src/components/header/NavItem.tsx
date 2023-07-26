@@ -10,9 +10,9 @@ type NavItemProps = {
 
 const NavItem = ({ className, children, to, text }: NavItemProps) => {
 	return (
-		<Link to={to} style={{ display: "flex", alignItems: "center" }}>
+		<Link to={to} className="uppercase flex items-center">
 			{children}
-			<span className={`navbar__item ${className}`}>{text}</span>
+			<span className={`font-bold ${className}`}>{text}</span>
 		</Link>
 	);
 };

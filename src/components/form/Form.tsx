@@ -13,22 +13,15 @@ type FormProps = {
 
 const Form = ({ children, fields, shadow }: FormProps) => {
 	return (
-		<Card className={`p-9 ${shadow}`}>
-			<form style={{ minWidth: "350px" }} className="flow-y-6 mx-4">
+		<Card className={`p-9 signup__form-container ${shadow}`}>
+			<form className="signup__form flow-y-6 mx-4">
 				{children}
 
 				{fields.map((field) => (
 					<Input {...field} />
 				))}
 
-				<div
-					style={{
-						textAlign: "start",
-						display: "flex",
-						alignItems: "center",
-					}}
-					className="mb-3 gap-2.5"
-				>
+				<div className="mb-3 gap-2.5 flex items-center justify-start">
 					<Switch.Root
 						className="switch rounded-full bg-primary"
 						id="remember-me"
@@ -44,7 +37,7 @@ const Form = ({ children, fields, shadow }: FormProps) => {
 				<button
 					type="button"
 					style={{ textTransform: "uppercase" }}
-					className="btn btn-primary w-full rounded py-4 px-2"
+					className="text-xs font-bold text-secondary bg-primary w-full rounded py-4 px-2"
 				>
 					Sign up
 				</button>

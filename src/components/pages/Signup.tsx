@@ -24,8 +24,9 @@ const Signup = () => {
 
 	return (
 		<div className="w-full relative text-secondary">
-			<div className="banner w-full bg-primary absolute rounded-md" />
-			<div className="w-full auth-container">
+			<div className="signup__banner w-full bg-primary absolute rounded-md" />
+
+			<div className="signup__container flex flex-column items-center w-full">
 				<div className="py-4 w-full">
 					<Header variant="light" />
 				</div>
@@ -36,7 +37,7 @@ const Signup = () => {
 					your project for free.
 				</p>
 
-				<div className="py-6 my-6">
+				<div className="py-6 my-6 w-full">
 					<Form shadow="shadow-lg" fields={fields}>
 						<RegisterWith />
 					</Form>

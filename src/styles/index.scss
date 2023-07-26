@@ -47,9 +47,12 @@ body {
    overflow-x: hidden;
 }
 
-/* A elements that don't have a class get default styles */
+/* Anchor elements get default styles */
 a:not([class]) {
    text-decoration-skip-ink: auto;
+}
+
+a {
    text-decoration: none;
    color: inherit;
 }
@@ -155,64 +158,31 @@ button:hover {
 .fixed { position: fixed; }
 .absolute { position: absolute; }
 
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+
+.items-center { align-items: center; }
+.items-start { align-items: start; }
+.items-end { align-items: end; }
+
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-start { justify-content: start; }
+.justify-end { justify-content: end; }
+
 .border { border: 1px solid $color-gray-200; }
 .border-2 { border: 2px solid $color-gray-200; }
 .border-3 { border: 3px solid $color-gray-200; }
 .border-4 { border: 4px solid $color-gray-200; }
 .border-5 { border: 5px solid $color-gray-200; }
 
-/* Classes */
+.uppercase { text-transform: uppercase; }
 
-// Footer
-.footer {
-   display: flex;
-   justify-content: space-between;
-   color: $color-gray-400;
-}
-
-.footer__nav {
-   display: flex;
-   gap: 52px;
-}
-
-// Navbar
-.navbar {
-   display: flex;
-   justify-content: space-between;
-}
-
-.navbar__item {
-   font-weight: $font-bold;
-   text-transform: uppercase;
-}
-
-// Button
-.btn {
-   text-align: center;
-   @extend .text-xs;
-   @extend .font-bold;
-}
-
-.btn-primary {
-   @extend .btn;
-   @extend .bg-primary;
-   @extend .text-secondary;
-}
-
-.btn-secondary {
-   @extend .btn;
-   @extend .bg-secondary;
-}
-
-.btn-gradient {
-   @extend .btn;
-   @extend .bg-gradient;
-   @extend .text-secondary;
-}
+/* Style classes */
 
 // Input
 .input__label {
-   @extend .ml-1;
    text-transform: capitalize;
    display: block;
    max-width: max-content;

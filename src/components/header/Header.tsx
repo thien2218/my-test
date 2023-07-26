@@ -13,7 +13,7 @@ const Header = ({ variant }: Variant) => {
 	const textColor = variant === "light" ? "text-secondary" : "text-gray-700";
 
 	return (
-		<nav className="navbar px-6 py-4">
+		<nav className="flex justify-between px-6 py-4">
 			<NavItem
 				className={`ml-3 ${textColor}`}
 				text="vandelay industries"
@@ -22,11 +22,7 @@ const Header = ({ variant }: Variant) => {
 				<VandelayIcon className={textColor} />
 			</NavItem>
 
-			<ul
-				className="gap-7"
-				style={{ display: "flex", alignItems: "center" }}
-				role="list"
-			>
+			<ul className="flex items-center gap-7" role="list">
 				<li>
 					<NavItem
 						className={`text-xs leading-tight ml-1 ${textColor}`}
@@ -71,7 +67,7 @@ const Header = ({ variant }: Variant) => {
 			<button
 				type="button"
 				style={{ minWidth: "150px" }}
-				className="btn btn-secondary rounded-full px-2 py-2.5"
+				className="text-xs bg-secondary rounded-full px-2 py-2.5"
 			>
 				Free Download
 			</button>
