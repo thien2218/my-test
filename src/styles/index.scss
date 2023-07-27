@@ -2,6 +2,7 @@
 @import "./spacing";
 @import "./signup-page";
 @import "./signin-page";
+@import "./dashboard-page";
 
 // Andy Bell CSS Reset
 // https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421
@@ -131,7 +132,7 @@ button:hover {
 
 .text-heading  { font-size: $text-heading; }
 .text-lg { font-size: $text-lg; }
-.text-base { font-size: $font-base; }
+.text-base { font-size: $text-base; }
 .text-sm { font-size: $text-sm; }
 .text-xs { font-size: $text-xs; }
 
@@ -185,6 +186,7 @@ button:hover {
 .border-5 { border: 5px solid $color-gray-200; }
 
 .uppercase { text-transform: uppercase; }
+.capitalize { text-transform: capitalize; }
 
 /* Style classes */
 
@@ -197,8 +199,6 @@ button:hover {
 
 // Input
 .input__label {
-   text-transform: capitalize;
-   display: block;
    max-width: max-content;
 }
 

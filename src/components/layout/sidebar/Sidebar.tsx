@@ -87,7 +87,10 @@ const Sidebar = () => {
 									<NavItem
 										to={item.to}
 										icon={
-											<IconWrapper isActive={isActive}>
+											<IconWrapper
+												className="p-2"
+												isActive={isActive}
+											>
 												{item.icon}
 											</IconWrapper>
 										}
@@ -118,7 +121,10 @@ const Sidebar = () => {
 									<NavItem
 										to={item.to}
 										icon={
-											<IconWrapper isActive={isActive}>
+											<IconWrapper
+												className="p-2"
+												isActive={isActive}
+											>
 												{item.icon}
 											</IconWrapper>
 										}

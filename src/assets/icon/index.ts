@@ -16,3 +16,8 @@ export { default as BillingIcon } from "./BillingIcon.tsx";
 export { default as SettingsIcon } from "./SettingsIcon.tsx";
 export { default as SearchIcon } from "./SearchIcon.tsx";
 export { default as BellIcon } from "./BellIcon.tsx";
+export { default as GlobeIcon } from "./GlobeIcon.tsx";
+export { default as PaperIcon } from "./PaperIcon.tsx";
+export { default as ShoppingCartIcon } from "./ShoppingCartIcon.tsx";
+export { default as WalletIconBig } from "./WalletIconBig.tsx";
+export { default as ArrowRightIcon } from "./ArrowRightIcon.tsx";

@@ -9,7 +9,10 @@ export type InputProps = {
 const Input = ({ id, placeholder, type }: InputProps) => {
 	return (
 		<div>
-			<Label.Root htmlFor={id} className="input__label ml-1 mb-1.5">
+			<Label.Root
+				htmlFor={id}
+				className="input__label block capitalize ml-1 mb-1.5"
+			>
 				{id}
 			</Label.Root>
 

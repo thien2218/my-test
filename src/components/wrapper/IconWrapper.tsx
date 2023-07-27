@@ -2,13 +2,14 @@ import { ReactNode } from "react";
 
 type IconWrapperProps = {
 	isActive?: boolean;
+	className: string;
 	children: ReactNode;
 };
 
-const IconWrapper = ({ isActive, children }: IconWrapperProps) => {
+const IconWrapper = ({ isActive, className, children }: IconWrapperProps) => {
 	return (
 		<div
-			className={`p-2 rounded ${
+			className={`rounded ${className} ${
 				isActive ? "bg-primary text-secondary" : "bg-secondary text-primary"
 			}`}
 		>
