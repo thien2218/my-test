@@ -33,7 +33,7 @@ const Summary = () => {
 	];
 
 	return (
-		<div className="dashboard__summary gap-6">
+		<div className="summary gap-6">
 			{summary.map((item, id) => {
 				let percentText;
 				const isPositive = item.percentage > 0;
@@ -48,9 +48,9 @@ const Summary = () => {
 				return (
 					<CardWrapper
 						key={id}
-						className="py-4.5 pl-5 pr-4.5 font-bold flex justify-between"
+						className="py-4.5 pl-5 pr-4.5 font-bold summary__card"
 					>
-						<div className="flex flex-column justify-between">
+						<div className="summary__card-text">
 							<h2 className="text-gray-400 text-sm">{item.title}</h2>
 							<p className="text-lg font-bold">
 								{item.total}
@@ -68,7 +68,7 @@ const Summary = () => {
 							</p>
 						</div>
 
-						<div className="shrink-0">
+						<div className="summary__card-icon">
 							<IconWrapper className="p-3 rounded" isActive>
 								{item.icon}
 							</IconWrapper>

@@ -21,7 +21,7 @@ const Breadcrumps = ({ pathname }: { pathname: string }) => {
 				<h1 className="font-bold mt-1.5 capitalize">{pageName}</h1>
 			</div>
 
-			<div className="flex items-center gap-4.5 text-gray-500">
+			<div className="breadcrumps__nav gap-4.5 text-gray-500">
 				<SearchInput />
 
 				<NavItem
