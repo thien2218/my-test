@@ -1,10 +1,10 @@
-import { SearchIcon } from "../../assets/icon";
+import { CgSearch } from "react-icons/cg";
 
 const SearchInput = () => {
 	return (
 		<div className="flex items-center relative">
-			<div className="flex items-center absolute h-full px-3">
-				<SearchIcon />
+			<div className="flex items-center absolute h-full px-3 text-gray-700">
+				<CgSearch />
 			</div>
 
 			<input

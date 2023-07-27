@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import CardWrapper from "../wrapper/CardWrapper";
-import { ArrowRightIcon } from "../../assets/icon";
+import { BsArrowRightShort } from "react-icons/bs";
 
 const Articles = () => {
 	return (
@@ -21,7 +21,7 @@ const Articles = () => {
 
 						<Link className="flex items-center font-bold text-xs" to="/">
 							<span className="mr-1">Read more</span>
-							<ArrowRightIcon />
+							<BsArrowRightShort size="16" />
 						</Link>
 					</div>
 
@@ -30,10 +30,13 @@ const Articles = () => {
 			</CardWrapper>
 
 			<CardWrapper className="py-4.5 pl-5 pr-4.5">
-				<div className="flex flex-column justify-between h-full relative text-secondary">
-					{/* <div className="dashboard__article-background absolute rounded h-full w-full" /> */}
+				<div className="dashboard__article-background rounded p-5 flex flex-column justify-between h-full w-full relative text-secondary">
+					<div className="dashboard__article-background-dark absolute" />
 
-					<div style={{ maxWidth: "330px" }} className="flow-y-1">
+					<div
+						style={{ maxWidth: "330px", zIndex: "2" }}
+						className="flow-y-1"
+					>
 						<h2 className="text-lg font-bold">Work with the Rockets</h2>
 						<p>
 							Wealth creation is an evolutionarily recent positive-sum
@@ -41,9 +44,13 @@ const Articles = () => {
 						</p>
 					</div>
 
-					<Link className="flex items-center font-bold text-xs" to="/">
+					<Link
+						style={{ zIndex: "2" }}
+						className="flex items-center font-bold text-xs"
+						to="/"
+					>
 						<span className="mr-1">Read more</span>
-						<ArrowRightIcon />
+						<BsArrowRightShort size="16" />
 					</Link>
 				</div>
 			</CardWrapper>

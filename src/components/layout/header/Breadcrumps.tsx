@@ -1,4 +1,6 @@
-import { BellIcon, ProfileIcon, SettingsIcon } from "../../../assets/icon";
+import { FaBell } from "react-icons/fa";
+import { FaUser } from "react-icons/fa6";
+import { MdSettings } from "react-icons/md";
 import SearchInput from "../../form/SearchInput";
 import NavItem from "./NavItem";
 
@@ -23,7 +25,7 @@ const Breadcrumps = ({ pathname }: { pathname: string }) => {
 				<SearchInput />
 
 				<NavItem
-					icon={<ProfileIcon />}
+					icon={<FaUser size="11" />}
 					to="/signin"
 					className="text-sm leading-none ml-1"
 				>
@@ -31,13 +33,13 @@ const Breadcrumps = ({ pathname }: { pathname: string }) => {
 				</NavItem>
 
 				<NavItem
-					icon={<SettingsIcon />}
+					icon={<MdSettings />}
 					to="/"
 					className="text-sm leading-none ml-1"
 				/>
 
 				<NavItem
-					icon={<BellIcon />}
+					icon={<FaBell size="12" />}
 					to="/"
 					className="text-sm leading-none ml-1"
 				/>

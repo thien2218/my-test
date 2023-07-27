@@ -1,11 +1,8 @@
-import {
-	GlobeIcon,
-	PaperIcon,
-	ShoppingCartIcon,
-	WalletIconBig,
-} from "../../assets/icon";
+import { FaGlobe, FaShoppingCart } from "react-icons/fa";
 import CardWrapper from "../wrapper/CardWrapper";
 import IconWrapper from "../wrapper/IconWrapper";
+import { HiDocumentText } from "react-icons/hi2";
+import { IoWallet } from "react-icons/io5";
 
 const Summary = () => {
 	const summary = [
@@ -13,25 +10,25 @@ const Summary = () => {
 			title: "Today’s Money",
 			total: "$53,000",
 			percentage: 55,
-			icon: <WalletIconBig />,
+			icon: <IoWallet size="20" />,
 		},
 		{
 			title: "Today’s Users",
 			total: "2,300",
 			percentage: 5,
-			icon: <GlobeIcon />,
+			icon: <FaGlobe size="20" />,
 		},
 		{
-			title: "Today’s Money",
+			title: "New Clients",
 			total: "+3,052",
 			percentage: -14,
-			icon: <PaperIcon />,
+			icon: <HiDocumentText size="20" />,
 		},
 		{
-			title: "Today’s Money",
+			title: "Total Sales",
 			total: "$173,000",
 			percentage: 8,
-			icon: <ShoppingCartIcon />,
+			icon: <FaShoppingCart size="20" />,
 		},
 	];
 

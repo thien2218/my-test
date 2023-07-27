@@ -1,4 +1,5 @@
-import { AppleIcon, FacebookIcon, GoogleIcon } from "../../assets/icon";
+import { BsApple, BsFacebook } from "react-icons/bs";
+import { FaGoogle } from "react-icons/fa";
 
 const RegisterWith = () => {
 	return (
@@ -10,21 +11,21 @@ const RegisterWith = () => {
 					type="button"
 					className="text-xs font-bold bg-secondary rounded-lg p-5 border"
 				>
-					<FacebookIcon />
+					<BsFacebook size="28" />
 				</button>
 
 				<button
 					type="button"
 					className="text-xs font-bold bg-secondary rounded-lg p-5 border"
 				>
-					<AppleIcon />
+					<BsApple size="28" />
 				</button>
 
 				<button
 					type="button"
 					className="text-xs font-bold bg-secondary rounded-lg p-5 border"
 				>
-					<GoogleIcon />
+					<FaGoogle size="28" />
 				</button>
 			</div>
 

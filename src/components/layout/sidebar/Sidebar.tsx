@@ -1,20 +1,16 @@
 import { useLocation } from "react-router-dom";
-import {
-	BillingIcon,
-	DocumentIcon,
-	HomeIcon,
-	ProfileIconBig,
-	RocketIcon,
-	RtlIcon,
-	TablesIcon,
-	VandelayIcon,
-} from "../../../assets/icon";
+import VandelayIcon from "../../../assets/icon/VandelayIcon";
+import { IoHelpCircle, IoHome, IoStatsChart } from "react-icons/io5";
 import CardWrapper from "../../wrapper/CardWrapper";
 import ConditionalWrapper from "../../wrapper/ConditionalWrapper";
 import IconWrapper from "../../wrapper/IconWrapper";
 import NavItem from "../header/NavItem";
 import * as Separator from "@radix-ui/react-separator";
-import HelpIcon from "../../../assets/icon/HelpIcon";
+import { FaWallet } from "react-icons/fa";
+import { FaUser } from "react-icons/fa6";
+import { AiFillTool } from "react-icons/ai";
+import { HiDocument } from "react-icons/hi2";
+import { BsRocketTakeoffFill } from "react-icons/bs";
 
 const Sidebar = () => {
 	const location = useLocation();
@@ -23,22 +19,22 @@ const Sidebar = () => {
 		{
 			to: "/dashboard",
 			text: "Dashboard",
-			icon: <HomeIcon />,
+			icon: <IoHome size="16" />,
 		},
 		{
 			to: "/tables",
 			text: "Tables",
-			icon: <TablesIcon />,
+			icon: <IoStatsChart size="16" />,
 		},
 		{
 			to: "/",
 			text: "Billing",
-			icon: <BillingIcon />,
+			icon: <FaWallet size="16" />,
 		},
 		{
 			to: "/",
 			text: "RTL",
-			icon: <RtlIcon />,
+			icon: <AiFillTool size="16" />,
 		},
 	];
 
@@ -46,17 +42,17 @@ const Sidebar = () => {
 		{
 			to: "/",
 			text: "Profile",
-			icon: <ProfileIconBig />,
+			icon: <FaUser size="16" />,
 		},
 		{
 			to: "/signin",
 			text: "Sign in",
-			icon: <DocumentIcon />,
+			icon: <HiDocument size="16" />,
 		},
 		{
 			to: "/signup",
 			text: "Sign up",
-			icon: <RocketIcon />,
+			icon: <BsRocketTakeoffFill size="16" />,
 		},
 	];
 
@@ -144,7 +140,7 @@ const Sidebar = () => {
 				className="p-4 rounded-lg bg-primary w-full text-secondary relative"
 			>
 				<div className="p-1.5 rounded bg-secondary shadow-none text-primary inline-block">
-					<HelpIcon />
+					<IoHelpCircle size="24" />
 				</div>
 
 				<p className="font-bold mt-5">

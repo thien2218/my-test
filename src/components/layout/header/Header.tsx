@@ -1,11 +1,9 @@
-import {
-	VandelayIcon,
-	DashboardIcon,
-	ProfileIcon,
-	SignupIcon,
-	SigninIcon,
-} from "../../../assets/icon";
+import VandelayIcon from "../../../assets/icon/VandelayIcon";
 import NavItem from "./NavItem";
+import { BsBoxFill } from "react-icons/bs";
+import { FaUser } from "react-icons/fa6";
+import { HiMiniUserCircle } from "react-icons/hi2";
+import { BiSolidKey } from "react-icons/bi";
 
 type Variant = { variant: "light" | "dark" };
 
@@ -14,21 +12,21 @@ const Header = ({ variant }: Variant) => {
 		{
 			text: "dashboard",
 			to: "dashboard",
-			icon: <DashboardIcon />,
+			icon: <BsBoxFill size="11" />,
 		},
 		{
 			text: "profile",
-			icon: <ProfileIcon />,
+			icon: <FaUser size="10" />,
 		},
 		{
 			text: "sign up",
 			to: "signup",
-			icon: <SignupIcon />,
+			icon: <HiMiniUserCircle size="13" />,
 		},
 		{
 			text: "sign in",
 			to: "signin",
-			icon: <SigninIcon />,
+			icon: <BiSolidKey size="12" />,
 		},
 	];
 
