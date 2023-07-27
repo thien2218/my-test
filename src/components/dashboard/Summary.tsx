@@ -68,11 +68,9 @@ const Summary = () => {
 							</p>
 						</div>
 
-						<div className="summary__card-icon">
-							<IconWrapper className="p-3 rounded" isActive>
-								{item.icon}
-							</IconWrapper>
-						</div>
+						<IconWrapper className="summary__card-icon rounded" isActive>
+							{item.icon}
+						</IconWrapper>
 					</CardWrapper>
 				);
 			})}

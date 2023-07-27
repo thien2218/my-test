@@ -11,32 +11,32 @@ const Statistics = () => {
 			title: "Users",
 			number: "32,984",
 			progress: 0.66,
-			icon: <IoWallet />,
+			icon: <IoWallet size="12" />,
 		},
 		{
 			title: "Clicks",
 			number: "2,42m",
 			progress: 0.8,
-			icon: <BsRocketTakeoffFill />,
+			icon: <BsRocketTakeoffFill size="11" />,
 		},
 		{
 			title: "Sales",
 			number: "2,400$",
 			progress: 0.33,
-			icon: <FaShoppingCart />,
+			icon: <FaShoppingCart size="11" />,
 		},
 		{
 			title: "Items",
 			number: "320",
 			progress: 0.6,
-			icon: <AiFillTool />,
+			icon: <AiFillTool size="12" />,
 		},
 	];
 
 	return (
-		<div className="dashboard__charts gap-6">
+		<div className="statistics gap-6">
 			<CardWrapper className="py-4.5 pl-5 pr-4.5 flow-y-6">
-				<div className="dashboard__charts-bar p-8 bg-gradient rounded flex justify-between items-end">
+				<div className="statistics__bar-chart p-8 bg-gradient rounded">
 					<ul
 						role="list"
 						className="flow-y-3.5 text-secondary text-xs font-bold"
@@ -49,11 +49,11 @@ const Statistics = () => {
 						<li>0</li>
 					</ul>
 
-					<div className="bar"></div>
-					<div className="bar"></div>
-					<div className="bar"></div>
-					<div className="bar"></div>
-					<div className="bar"></div>
+					<div className="bg-secondary rounded-full" />
+					<div className="bg-secondary rounded-full" />
+					<div className="bg-secondary rounded-full" />
+					<div className="bg-secondary rounded-full" />
+					<div className="bg-secondary rounded-full" />
 				</div>
 
 				<div>
@@ -64,16 +64,12 @@ const Statistics = () => {
 					</p>
 				</div>
 
-				<ul role="list" className="dashboard__statistic-summary mt-3">
+				<ul role="list" className="statistic__summary mt-3">
 					{items.map((item, id) => (
-						<li
-							style={{ maxWidth: "100px" }}
-							key={id}
-							className="flow-y-1.5"
-						>
-							<div className="flex items-center gap-2.5">
+						<li key={id} className="statistic__summary-item flow-y-1.5">
+							<div className="statistic__summary-text gap-2.5">
 								<IconWrapper
-									className="p-1.5 inline rounded-sm rounded-sm"
+									className="statistic__summary-icon rounded-sm"
 									isActive
 								>
 									{item.icon}
@@ -86,7 +82,7 @@ const Statistics = () => {
 
 							<p className="text-lg font-bold">{item.number}</p>
 
-							<div className="dashboard__statistic-progress">
+							<div className="statistic__progress">
 								<div style={{ width: `${item.progress * 100}%` }} />
 							</div>
 						</li>

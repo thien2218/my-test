@@ -38,8 +38,7 @@ const Form = ({ children, fields, formType }: FormProps) => {
 
 				<button
 					type="button"
-					style={{ textTransform: "uppercase" }}
-					className="text-xs font-bold text-secondary bg-primary w-full rounded py-4 px-2"
+					className="text-xs font-bold text-secondary bg-primary w-full rounded py-4 px-2 uppercase"
 				>
 					{formType}
 				</button>

@@ -32,7 +32,7 @@ const Header = ({ variant }: Variant) => {
 
 	return (
 		<nav
-			className={`flex justify-between px-6 py-4 rounded-lg ${
+			className={`header px-6 py-4 rounded-lg ${
 				variant === "light"
 					? "text-secondary"
 					: "header__background text-gray-700 shadow-lg"

@@ -189,6 +189,7 @@ button:hover {
 }
 
 // Footer
+.header,
 .footer {
    display: flex;
    justify-content: space-between;
@@ -252,12 +253,19 @@ button:hover {
    width: 220px;
 }
 
+.sidebar__nav-icon {
+   height: 30px;
+   width: 30px;
+}
+
 .sidebar__help-doc {
    overflow: hidden;
    position: relative;
 }
 
 .sidebar__help-doc-icon {
+   height: 35px;
+   width: 35px;
    display: inline-block;
 }
 
@@ -331,4 +339,11 @@ button:hover {
    display: flex;
    align-items: center;
    position: absolute;
+}
+
+// Icon wrapper
+.icon-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }

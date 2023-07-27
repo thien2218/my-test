@@ -4,10 +4,10 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 const Articles = () => {
 	return (
-		<div className="article gap-6">
+		<div className="articles gap-6">
 			<CardWrapper className="py-4.5 pl-5 pr-4.5">
-				<div className="article__main-card h-full">
-					<div className="article__main-card-text">
+				<div className="articles__main-card h-full">
+					<div className="articles__main-card-text">
 						<div className="flow-y-1">
 							<h2 className="text-sm text-gray-400 font-bold">
 								Built by developers
@@ -19,19 +19,22 @@ const Articles = () => {
 							</p>
 						</div>
 
-						<Link className="article__read-more font-bold text-xs" to="/">
+						<Link
+							className="articles__read-more font-bold text-xs"
+							to="/"
+						>
 							<span className="mr-1">Read more</span>
 							<BsArrowRightShort size="16" />
 						</Link>
 					</div>
 
-					<div className="article__main-image rounded" />
+					<div className="articles__main-image rounded" />
 				</div>
 			</CardWrapper>
 
 			<CardWrapper className="py-4.5 pl-5 pr-4.5">
-				<div className="article__sub-image rounded p-5 h-full w-full text-secondary">
-					<div className="article__sub-bg-dark" />
+				<div className="articles__sub-image rounded p-5 h-full w-full text-secondary">
+					<div className="articles__sub-bg-dark" />
 
 					<div
 						style={{ maxWidth: "330px", zIndex: "2" }}

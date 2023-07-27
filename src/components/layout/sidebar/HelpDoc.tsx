@@ -1,11 +1,12 @@
 import { IoHelpCircle } from "react-icons/io5";
+import IconWrapper from "../../wrapper/IconWrapper";
 
 const HelpDoc = () => {
 	return (
 		<div className="sidebar__help-doc p-4 rounded-lg bg-primary w-full text-secondary">
-			<div className="sidebar__help-doc-icon p-1.5 rounded bg-secondary shadow-none text-primary">
+			<IconWrapper className="sidebar__help-doc-icon rounded">
 				<IoHelpCircle size="24" />
-			</div>
+			</IconWrapper>
 
 			<p className="font-bold mt-5">
 				Need help? <br />

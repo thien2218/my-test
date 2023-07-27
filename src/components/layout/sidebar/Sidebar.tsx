@@ -6,11 +6,10 @@ import ConditionalWrapper from "../../wrapper/ConditionalWrapper";
 import IconWrapper from "../../wrapper/IconWrapper";
 import NavItem from "../header/NavItem";
 import * as Separator from "@radix-ui/react-separator";
-import { IoWallet } from "react-icons/io5";
 import { FaUser } from "react-icons/fa6";
 import { AiFillTool } from "react-icons/ai";
 import { HiDocument } from "react-icons/hi2";
-import { BsRocketTakeoffFill } from "react-icons/bs";
+import { BsFillCreditCardFill, BsRocketTakeoffFill } from "react-icons/bs";
 import HelpDoc from "./HelpDoc";
 
 const Sidebar = () => {
@@ -30,7 +29,7 @@ const Sidebar = () => {
 		{
 			to: "/",
 			text: "Billing",
-			icon: <IoWallet size="16" />,
+			icon: <BsFillCreditCardFill size="14" />,
 		},
 		{
 			to: "/",
@@ -43,17 +42,17 @@ const Sidebar = () => {
 		{
 			to: "/",
 			text: "Profile",
-			icon: <FaUser size="16" />,
+			icon: <FaUser size="14" />,
 		},
 		{
 			to: "/signin",
 			text: "Sign in",
-			icon: <HiDocument size="16" />,
+			icon: <HiDocument size="15" />,
 		},
 		{
 			to: "/signup",
 			text: "Sign up",
-			icon: <BsRocketTakeoffFill size="16" />,
+			icon: <BsRocketTakeoffFill size="14" />,
 		},
 	];
 
@@ -82,7 +81,7 @@ const Sidebar = () => {
 										to={item.to}
 										icon={
 											<IconWrapper
-												className="p-2 rounded"
+												className="sidebar__nav-icon rounded"
 												isActive={isActive}
 											>
 												{item.icon}
@@ -116,7 +115,7 @@ const Sidebar = () => {
 										to={item.to}
 										icon={
 											<IconWrapper
-												className="p-2 rounded"
+												className="sidebar__nav-icon rounded"
 												isActive={isActive}
 											>
 												{item.icon}
