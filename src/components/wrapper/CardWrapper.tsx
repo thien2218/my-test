@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 type CardWrapperProps = {
-	className: string;
-	children: ReactNode;
+	className?: string;
+	children?: ReactNode;
 };
 
 const CardWrapper = ({ className, children }: CardWrapperProps) => {

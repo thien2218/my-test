@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import NotFound from "./components/pages/NotFound";
 import Signup from "./components/pages/Signup";
 import Signin from "./components/pages/Signin";
@@ -6,8 +6,15 @@ import Dashboard from "./components/pages/Dashboard";
 import Tables from "./components/pages/Tables";
 
 function App() {
+	const location = useLocation();
+	const pathname = location.pathname.replace("/", "");
+
 	return (
-		<div className="p-6">
+		<div
+			className={`p-6 ${
+				pathname !== "signup" && pathname !== "signin" && "bg-screen"
+			}`}
+		>
 			<Routes>
 				<Route path="/signup" element={<Signup />} />
 				<Route path="/signin" element={<Signin />} />
