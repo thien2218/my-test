@@ -1,4 +1,4 @@
-const VandelayIcon = () => {
+const VandelayLogo = () => {
 	return (
 		<svg
 			width="22"
@@ -27,4 +27,4 @@ const VandelayIcon = () => {
 	);
 };
 
-export default VandelayIcon;
+export default VandelayLogo;

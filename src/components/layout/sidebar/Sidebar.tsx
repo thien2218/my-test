@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom";
-import VandelayIcon from "../../../assets/icon/VandelayIcon";
 import { IoHome, IoStatsChart } from "react-icons/io5";
 import CardWrapper from "../../wrapper/CardWrapper";
 import ConditionalWrapper from "../../wrapper/ConditionalWrapper";
@@ -11,6 +10,7 @@ import { AiFillTool } from "react-icons/ai";
 import { HiDocument } from "react-icons/hi2";
 import { BsFillCreditCardFill, BsRocketTakeoffFill } from "react-icons/bs";
 import HelpDoc from "./HelpDoc";
+import { VandelayLogo } from "../../../assets/icons";
 
 const Sidebar = () => {
 	const location = useLocation();
@@ -58,7 +58,7 @@ const Sidebar = () => {
 
 	return (
 		<div className="sidebar flow-y-6 mt-5">
-			<NavItem to="/" icon={<VandelayIcon />} className="uppercase ml-3">
+			<NavItem to="/" icon={<VandelayLogo />} className="uppercase ml-3">
 				Vandelay industry
 			</NavItem>
 

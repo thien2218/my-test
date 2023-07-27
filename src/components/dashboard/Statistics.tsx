@@ -33,6 +33,23 @@ const Statistics = () => {
 		},
 	];
 
+	const months = [
+		"Jan",
+		"Feb",
+		"Mar",
+		"Apr",
+		"May",
+		"Jun",
+		"Jul",
+		"Aug",
+		"Sep",
+		"Oct",
+		"Nov",
+		"Dev",
+	];
+
+	const numbers = [500, 400, 300, 200, 100, 0];
+
 	return (
 		<div className="statistics gap-6">
 			<CardWrapper className="py-4.5 pl-5 pr-4.5 flow-y-6">
@@ -41,12 +58,9 @@ const Statistics = () => {
 						role="list"
 						className="flow-y-3.5 text-secondary text-xs font-bold"
 					>
-						<li>500</li>
-						<li>400</li>
-						<li>300</li>
-						<li>200</li>
-						<li>100</li>
-						<li>0</li>
+						{numbers.map((number) => (
+							<li key={number}>{number}</li>
+						))}
 					</ul>
 
 					<div className="bg-secondary rounded-full" />
@@ -64,12 +78,12 @@ const Statistics = () => {
 					</p>
 				</div>
 
-				<ul role="list" className="statistic__summary mt-3">
+				<ul role="list" className="statistics__users mt-3">
 					{items.map((item, id) => (
-						<li key={id} className="statistic__summary-item flow-y-1.5">
-							<div className="statistic__summary-text gap-2.5">
+						<li key={id} className="statistics__users-item flow-y-1.5">
+							<div className="statistics__users-text gap-2.5">
 								<IconWrapper
-									className="statistic__summary-icon rounded-sm"
+									className="statistics__users-icon rounded-sm"
 									isActive
 								>
 									{item.icon}
@@ -82,7 +96,7 @@ const Statistics = () => {
 
 							<p className="text-lg font-bold">{item.number}</p>
 
-							<div className="statistic__progress">
+							<div className="progress">
 								<div style={{ width: `${item.progress * 100}%` }} />
 							</div>
 						</li>
@@ -90,7 +104,7 @@ const Statistics = () => {
 				</ul>
 			</CardWrapper>
 
-			<CardWrapper className="py-4.5 pl-5 pr-4.5 flex flex-column">
+			<CardWrapper className="py-4.5 pl-5 pr-4.5">
 				<div className="mb-9">
 					<h2 className="text-lg font-bold mb-1.5">Sales overview</h2>
 					<p className="text-gray-400">
@@ -99,43 +113,26 @@ const Statistics = () => {
 					</p>
 				</div>
 
-				<div style={{ flexGrow: 1 }} className="flex">
+				<div className="statistics__sales">
 					<ul
 						role="list"
-						className="flow-y-3.5 text-gray-300 text-xs font-bold flex flex-column justify-between pb-6 mb-6"
+						className="text-gray-300 text-xs mr-6 pb-6 font-bold statistics__sales-y"
 					>
-						<li>500</li>
-						<li>400</li>
-						<li>300</li>
-						<li>200</li>
-						<li>100</li>
-						<li>0</li>
+						{numbers.map((number) => (
+							<li key={number}>{number}</li>
+						))}
 					</ul>
 
-					<div className="flex flex-column">
-						<img
-							style={{ flexGrow: 1 }}
-							src="/chart.png"
-							className="w-full px-6"
-							alt="Chart"
-						/>
+					<div>
+						<img src="/chart.png" alt="Chart" />
 
 						<ul
 							role="list"
-							className="text-gray-300 text-xs font-bold flex justify-between px-6 mt-6"
+							className="text-gray-300 text-xs font-bold statistics__sales-x mt-6"
 						>
-							<li>Jan</li>
-							<li>Feb</li>
-							<li>Mar</li>
-							<li>Apr</li>
-							<li>May</li>
-							<li>Jun</li>
-							<li>Jul</li>
-							<li>Aug</li>
-							<li>Sep</li>
-							<li>Oct</li>
-							<li>Nov</li>
-							<li>Dec</li>
+							{months.map((month) => (
+								<li key={month}>{month}</li>
+							))}
 						</ul>
 					</div>
 				</div>

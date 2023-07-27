@@ -1,9 +1,9 @@
-import VandelayIcon from "../../../assets/icon/VandelayIcon";
 import NavItem from "./NavItem";
 import { BsBoxFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa6";
 import { HiMiniUserCircle } from "react-icons/hi2";
 import { BiSolidKey } from "react-icons/bi";
+import { VandelayLogo } from "../../../assets/icons";
 
 type Variant = { variant: "light" | "dark" };
 
@@ -38,7 +38,7 @@ const Header = ({ variant }: Variant) => {
 					: "header__background text-gray-700 shadow-lg"
 			}`}
 		>
-			<NavItem className="uppercase ml-3" icon={<VandelayIcon />} to="/">
+			<NavItem className="uppercase ml-3" icon={<VandelayLogo />} to="/">
 				Vandelay Industries
 			</NavItem>
 
