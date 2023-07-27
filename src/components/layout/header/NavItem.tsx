@@ -4,13 +4,17 @@ import { ReactNode } from "react";
 type NavItemProps = {
 	className: string;
 	icon: ReactNode;
-	children: string;
+	children?: string;
 	to: string;
 };
 
 const NavItem = ({ className, children, to, icon }: NavItemProps) => {
 	return (
-		<Link to={to} className="flex items-center">
+		<Link
+			style={{ flexWrap: "nowrap", flexShrink: "0" }}
+			to={to}
+			className="flex items-center"
+		>
 			{icon}
 			<span className={`font-bold ${className}`}>{children}</span>
 		</Link>

@@ -63,7 +63,7 @@ const Sidebar = () => {
 	return (
 		<div
 			style={{ width: "240px" }}
-			className="flex flex-column items-center flow-y-6"
+			className="flex flex-column items-center flow-y-6 mt-5"
 		>
 			<NavItem to="/" icon={<VandelayIcon />} className="uppercase ml-3">
 				Vandelay industry

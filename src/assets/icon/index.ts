@@ -13,3 +13,6 @@ export { default as RtlIcon } from "./RtlIcon.tsx";
 export { default as TablesIcon } from "./TablesIcon.tsx";
 export { default as DocumentIcon } from "./DocumentIcon.tsx";
 export { default as BillingIcon } from "./BillingIcon.tsx";
+export { default as SettingsIcon } from "./SettingsIcon.tsx";
+export { default as SearchIcon } from "./SearchIcon.tsx";
+export { default as BellIcon } from "./BellIcon.tsx";
