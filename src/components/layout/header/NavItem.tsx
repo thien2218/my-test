@@ -10,11 +10,7 @@ type NavItemProps = {
 
 const NavItem = ({ className, children, to, icon }: NavItemProps) => {
 	return (
-		<Link
-			style={{ flexWrap: "nowrap", flexShrink: "0" }}
-			to={to}
-			className="flex items-center"
-		>
+		<Link to={to} className="header__nav-item">
 			{icon}
 			<span className={`font-bold ${className}`}>{children}</span>
 		</Link>

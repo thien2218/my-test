@@ -8,10 +8,10 @@ const Breadcrumps = ({ pathname }: { pathname: string }) => {
 	const pageName = pathname.replace("/", "");
 
 	return (
-		<div className="flex justify-between items-start px-3">
+		<div className="breadcrumps px-3">
 			<div className="mt-2.5">
 				<nav>
-					<ol role="list" className="inline-flex items-center">
+					<ol role="list" className="breadcrumps__item">
 						<li className="text-gray-400">Pages</li>
 						<span className="mx-2">/</span>
 						<li className="capitalize">{pageName}</li>

@@ -11,7 +11,7 @@ const Input = ({ id, placeholder, type }: InputProps) => {
 		<div>
 			<Label.Root
 				htmlFor={id}
-				className="input__label block capitalize ml-1 mb-1.5"
+				className="input__label capitalize ml-1 mb-1.5"
 			>
 				{id}
 			</Label.Root>

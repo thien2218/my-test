@@ -42,7 +42,7 @@ const Header = ({ variant }: Variant) => {
 				Vandelay Industries
 			</NavItem>
 
-			<ul className="flex items-center gap-7" role="list">
+			<ul className="header__nav gap-7" role="list">
 				{items.map((item, id) => (
 					<li>
 						<NavItem

@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 	const location = useLocation();
 
 	return (
-		<div className="flex gap-8">
+		<div className="layout gap-8">
 			<Sidebar />
 			<div className="w-full">
 				<Breadcrumps pathname={location.pathname} />

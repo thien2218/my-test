@@ -69,7 +69,7 @@ const Summary = () => {
 						</div>
 
 						<div className="shrink-0">
-							<IconWrapper className="p-3" isActive>
+							<IconWrapper className="p-3 rounded" isActive>
 								{item.icon}
 							</IconWrapper>
 						</div>

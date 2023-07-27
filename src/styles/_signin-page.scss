@@ -1,4 +1,12 @@
+.signin {
+   position: relative;
+}
+
 .signin__banner {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    top: 0;
    right: 0;
    transform: translate(24px, -24px);
@@ -12,6 +20,10 @@
    z-index: -1;
 }
 
+.signin__banner-image {
+   max-width: 40%;
+}
+
 .signin__container {
    max-width: 1024px;
    margin-inline: auto;
@@ -19,4 +31,6 @@
 
 .signin__form-container {
    max-width: calc(350px + 72px);
+   margin-top: 200px;
+   margin-bottom: 200px;
 }

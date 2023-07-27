@@ -19,10 +19,10 @@ const Signin = () => {
 	];
 
 	return (
-		<div className="w-full relative text-secondary">
-			<div className="signin__banner bg-primary absolute flex items-center justify-center">
+		<div className="signin w-full text-secondary">
+			<div className="signin__banner bg-primary">
 				<img
-					style={{ maxWidth: "40%" }}
+					className="signin__banner-image"
 					src="/chakra-logo.png"
 					alt="Chakra logo"
 				/>
@@ -31,16 +31,13 @@ const Signin = () => {
 			<div className="signin__container w-full">
 				<Header variant="dark" />
 
-				<div
-					style={{ marginTop: "200px", marginBottom: "200px" }}
-					className="signin__form-container w-full"
-				>
+				<div className="signin__form-container w-full">
 					<Form formType="Sign in" fields={fields}>
 						<WelcomeBack />
 					</Form>
 				</div>
 
-				<div className="py-4 w-full">
+				<div className="footer py-4">
 					<Footer />
 				</div>
 			</div>

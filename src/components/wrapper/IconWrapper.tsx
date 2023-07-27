@@ -9,7 +9,7 @@ type IconWrapperProps = {
 const IconWrapper = ({ isActive, className, children }: IconWrapperProps) => {
 	return (
 		<div
-			className={`rounded ${className} ${
+			className={`${className} ${
 				isActive ? "bg-primary text-secondary" : "bg-secondary text-primary"
 			}`}
 		>

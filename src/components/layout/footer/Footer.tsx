@@ -1,24 +1,26 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
 	return (
-		<div className="w-full flex justify-between text-gray-400">
+		<div className="footer w-full text-gray-400">
 			<p>
 				© 2022, Made with ❤️ by
 				<span className="text-primary font-bold"> Tektorch</span> for a
 				better web
 			</p>
 
-			<ul className="flex" style={{ gap: "52px" }} role="list">
+			<ul className="footer__list" style={{ gap: "52px" }} role="list">
 				<li>
-					<a href="/">About Us</a>
+					<Link to="/">About Us</Link>
 				</li>
 				<li>
-					<a href="/">Privacy</a>
+					<Link to="/">Privacy</Link>
 				</li>
 				<li>
-					<a href="/">Blog</a>
+					<Link to="/">Blog</Link>
 				</li>
 				<li>
-					<a href="/">License</a>
+					<Link to="/">License</Link>
 				</li>
 			</ul>
 		</div>

@@ -2,8 +2,8 @@ import { CgSearch } from "react-icons/cg";
 
 const SearchInput = () => {
 	return (
-		<div className="flex items-center relative">
-			<div className="flex items-center absolute h-full px-3 text-gray-700">
+		<div className="breadcrumps__search">
+			<div className="breadcrumps__search-icon h-full px-3 text-gray-700">
 				<CgSearch />
 			</div>
 

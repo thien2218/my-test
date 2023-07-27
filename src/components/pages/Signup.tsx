@@ -23,11 +23,11 @@ const Signup = () => {
 	];
 
 	return (
-		<div className="w-full relative text-secondary">
-			<div className="signup__banner w-full bg-primary absolute rounded-lg" />
+		<div className="signup w-full text-secondary">
+			<div className="signup__banner w-full bg-primary rounded-lg" />
 
-			<div className="signup__container flex flex-column items-center w-full">
-				<div className="py-4 w-full">
+			<div className="signup__container w-full">
+				<div className="w-full py-4">
 					<Header variant="light" />
 				</div>
 
@@ -37,13 +37,13 @@ const Signup = () => {
 					your project for free.
 				</p>
 
-				<div className="signup__form-container py-6 my-6 w-full">
+				<div className="signup__form-container w-full py-6 my-6">
 					<Form formType="Sign up" fields={fields}>
 						<RegisterWith />
 					</Form>
 				</div>
 
-				<div className="py-4 w-full">
+				<div className="w-full py-4">
 					<Footer />
 				</div>
 			</div>

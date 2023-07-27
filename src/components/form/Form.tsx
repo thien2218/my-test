@@ -16,14 +16,14 @@ const Form = ({ children, fields, formType }: FormProps) => {
 
 	return (
 		<CardWrapper className={`p-9 ${shadow}`}>
-			<form style={{ maxWidth: "350px" }} className="flow-y-6 mx-4">
+			<form className="form flow-y-6 mx-4">
 				{children}
 
 				{fields.map((field, id) => (
 					<Input {...field} key={id} />
 				))}
 
-				<div className="mb-3 gap-2.5 flex items-center justify-start">
+				<div className="mb-3 gap-2.5 switch__container">
 					<Switch.Root
 						className="switch rounded-full bg-primary"
 						id="remember-me"
