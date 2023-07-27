@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-type CardProps = {
+type CardWrapperProps = {
 	className: string;
 	children: ReactNode;
 };
 
-const Card = ({ className, children }: CardProps) => {
+const CardWrapper = ({ className, children }: CardWrapperProps) => {
 	return (
 		<div
 			className={`bg-secondary rounded-lg w-full text-gray-700 shadow ${className}`}
@@ -15,4 +15,4 @@ const Card = ({ className, children }: CardProps) => {
 	);
 };
 
-export default Card;
+export default CardWrapper;

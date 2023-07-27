@@ -1,8 +1,8 @@
-import Footer from "../footer/Footer";
+import Footer from "../layout/footer/Footer";
 import Form from "../form/Form";
 import { InputProps } from "../form/Input";
 import RegisterWith from "../form/RegisterWith";
-import Header from "../header/Header";
+import Header from "../layout/header/Header";
 
 const Signup = () => {
 	const fields: InputProps[] = [
@@ -24,7 +24,7 @@ const Signup = () => {
 
 	return (
 		<div className="w-full relative text-secondary">
-			<div className="signup__banner w-full bg-primary absolute rounded-md" />
+			<div className="signup__banner w-full bg-primary absolute rounded-lg" />
 
 			<div className="signup__container flex flex-column items-center w-full">
 				<div className="py-4 w-full">

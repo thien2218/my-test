@@ -143,7 +143,6 @@ button:hover {
 .shadow-lg { box-shadow: $shadow-lg; }
 
 .rounded { border-radius: $rounded-base; }
-.rounded-md { border-radius: $rounded-md; }
 .rounded-lg { border-radius: $rounded-lg; }
 .rounded-full { border-radius: $rounded-full; }
 
@@ -213,3 +212,8 @@ button:hover {
 .switch__thumb[data-state='checked'] {
    transform: translateX(20px);
  }
+
+// Sidebar
+.sidebar {
+   width: 240px;
+}

@@ -1,4 +1,4 @@
-import { AppleIcon, FacebookIcon, GoogleIcon } from "../../assets/Icons";
+import { AppleIcon, FacebookIcon, GoogleIcon } from "../../assets/icon";
 
 const RegisterWith = () => {
 	return (
@@ -8,23 +8,23 @@ const RegisterWith = () => {
 			<div className="flex justify-center gap-4">
 				<button
 					type="button"
-					className="text-xs font-bold bg-secondary rounded-md p-5 border"
+					className="text-xs font-bold bg-secondary rounded-lg p-5 border"
 				>
-					<FacebookIcon className="text-gray-700" />
+					<FacebookIcon />
 				</button>
 
 				<button
 					type="button"
-					className="text-xs font-bold bg-secondary rounded-md p-5 border"
+					className="text-xs font-bold bg-secondary rounded-lg p-5 border"
 				>
-					<AppleIcon className="text-gray-700" />
+					<AppleIcon />
 				</button>
 
 				<button
 					type="button"
-					className="text-xs font-bold bg-secondary rounded-md p-5 border"
+					className="text-xs font-bold bg-secondary rounded-lg p-5 border"
 				>
-					<GoogleIcon className="text-gray-700" />
+					<GoogleIcon />
 				</button>
 			</div>
 

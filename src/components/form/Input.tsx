@@ -15,7 +15,7 @@ const Input = ({ id, placeholder, type }: InputProps) => {
 
 			<input
 				id={id}
-				className="rounded-md px-5 py-4 w-full border"
+				className="rounded-lg px-5 py-4 w-full border"
 				type={type ?? "text"}
 				placeholder={placeholder}
 			/>

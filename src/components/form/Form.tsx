@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Input, { InputProps } from "./Input";
-import Card from "../card/Card";
+import CardWrapper from "../wrapper/CardWrapper";
 import * as Switch from "@radix-ui/react-switch";
 import * as Label from "@radix-ui/react-label";
 import { Link } from "react-router-dom";
@@ -15,12 +15,12 @@ const Form = ({ children, fields, formType }: FormProps) => {
 	const shadow = formType === "Sign up" ? "shadow-lg" : "shadow-none";
 
 	return (
-		<Card className={`p-9 ${shadow}`}>
+		<CardWrapper className={`p-9 ${shadow}`}>
 			<form style={{ maxWidth: "350px" }} className="flow-y-6 mx-4">
 				{children}
 
-				{fields.map((field) => (
-					<Input {...field} />
+				{fields.map((field, id) => (
+					<Input {...field} key={id} />
 				))}
 
 				<div className="mb-3 gap-2.5 flex items-center justify-start">
@@ -51,7 +51,7 @@ const Form = ({ children, fields, formType }: FormProps) => {
 					</Link>
 				</p>
 			</form>
-		</Card>
+		</CardWrapper>
 	);
 };
 

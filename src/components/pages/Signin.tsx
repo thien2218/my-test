@@ -1,8 +1,8 @@
-import Footer from "../footer/Footer";
+import Footer from "../layout/footer/Footer";
 import Form from "../form/Form";
 import { InputProps } from "../form/Input";
 import WelcomeBack from "../form/WelcomeBack";
-import Header from "../header/Header";
+import Header from "../layout/header/Header";
 
 const Signin = () => {
 	const fields: InputProps[] = [
@@ -40,7 +40,9 @@ const Signin = () => {
 					</Form>
 				</div>
 
-				<Footer />
+				<div className="py-4 w-full">
+					<Footer />
+				</div>
 			</div>
 		</div>
 	);
