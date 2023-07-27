@@ -3,6 +3,7 @@
 @import "./signup-page";
 @import "./signin-page";
 @import "./dashboard-page";
+@import "./tables-page";
 
 // Andy Bell CSS Reset
 // https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421
@@ -74,6 +75,7 @@ svg {
 /* Set default behaviours of buttons */
 button {
    border: none;
+   background: none;
 }
 
 button:hover {
@@ -277,6 +279,7 @@ button:hover {
    display: flex;
    align-items: center;
    justify-content: center;
+   pointer-events: none;
 
    & > div {
       position: absolute;

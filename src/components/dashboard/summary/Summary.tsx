@@ -1,6 +1,6 @@
 import { FaGlobe, FaShoppingCart } from "react-icons/fa";
-import CardWrapper from "../wrapper/CardWrapper";
-import IconWrapper from "../wrapper/IconWrapper";
+import CardWrapper from "../../wrapper/CardWrapper";
+import IconWrapper from "../../wrapper/IconWrapper";
 import { HiDocumentText } from "react-icons/hi2";
 import { IoWallet } from "react-icons/io5";
 

@@ -13,7 +13,7 @@ const HelpDoc = () => {
 				<span className="font-base text-sm">Please check our docs</span>
 			</p>
 
-			<button className="w-full rounded uppercase px-2 py-2.5 text-xs font-bold mt-2">
+			<button className="w-full bg-secondary rounded uppercase px-2 py-2.5 text-xs font-bold mt-2">
 				Documentation
 			</button>
 

@@ -1,7 +1,7 @@
-import Articles from "../dashboard/Articles";
-import Statistics from "../dashboard/Statistics";
-import Summary from "../dashboard/Summary";
-import Details from "../dashboard/Details";
+import Articles from "../dashboard/article/Articles";
+import Statistics from "../dashboard/statistic/Statistics";
+import Summary from "../dashboard/summary/Summary";
+import Details from "../dashboard/details/Details";
 import Layout from "../layout/Layout";
 
 const Dashboard = () => {

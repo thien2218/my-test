@@ -1,35 +1,13 @@
 import { Link } from "react-router-dom";
-import CardWrapper from "../wrapper/CardWrapper";
+import CardWrapper from "../../wrapper/CardWrapper";
 import { BsArrowRightShort } from "react-icons/bs";
+import MainArticle from "./MainArticle";
 
 const Articles = () => {
 	return (
 		<div className="articles gap-6">
 			<CardWrapper className="py-4.5 pl-5 pr-4.5">
-				<div className="articles__main-card h-full">
-					<div className="articles__main-card-text">
-						<div className="flow-y-1">
-							<h2 className="text-sm text-gray-400 font-bold">
-								Built by developers
-							</h2>
-							<h3 className="text-lg font-bold">Purity UI Dashboard</h3>
-							<p className="text-gray-400">
-								From colors, cards, typography to complex elements, you
-								will find the full documentation.
-							</p>
-						</div>
-
-						<Link
-							className="articles__read-more font-bold text-xs"
-							to="/"
-						>
-							<span className="mr-1">Read more</span>
-							<BsArrowRightShort size="16" />
-						</Link>
-					</div>
-
-					<div className="articles__main-image rounded" />
-				</div>
+				<MainArticle />
 			</CardWrapper>
 
 			<CardWrapper className="py-4.5 pl-5 pr-4.5">
