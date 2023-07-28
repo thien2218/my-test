@@ -44,12 +44,11 @@ const Header = ({ variant }: Variant) => {
 
 			<ul className="header__nav gap-7" role="list">
 				{items.map((item, id) => (
-					<li>
+					<li key={id}>
 						<NavItem
 							className="uppercase text-xs leading-tight ml-1"
 							icon={item.icon}
 							to={`/${item.to}`}
-							key={id}
 						>
 							{item.text}
 						</NavItem>

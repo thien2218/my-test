@@ -58,7 +58,11 @@ const Sidebar = () => {
 
 	return (
 		<div className="sidebar flow-y-6 mt-5">
-			<NavItem to="/" icon={<VandelayLogo />} className="uppercase ml-3">
+			<NavItem
+				to="/"
+				icon={<VandelayLogo />}
+				className="uppercase ml-3 sidebar__logo"
+			>
 				Vandelay industry
 			</NavItem>
 
@@ -72,9 +76,9 @@ const Sidebar = () => {
 							<li className="text-sm" key={id}>
 								<ConditionalWrapper
 									condition={isActive}
-									wrapperIfTrue={<CardWrapper className="py-3 px-4" />}
+									wrapperIfTrue={<CardWrapper className="p-3" />}
 									wrapperIfFalse={
-										<div className="py-3 px-4 text-gray-400" />
+										<div className="p-3 text-gray-400" />
 									}
 								>
 									<NavItem
@@ -97,7 +101,7 @@ const Sidebar = () => {
 					})}
 				</ul>
 
-				<p className="uppercase font-bold ml-4 text-sm">Account pages</p>
+				<p className="uppercase font-bold text-sm">Account pages</p>
 
 				<ul className="sidebar__nav" role="list">
 					{accountNavItems.map((item, id) => {
@@ -106,9 +110,9 @@ const Sidebar = () => {
 							<li className="text-sm" key={id}>
 								<ConditionalWrapper
 									condition={isActive}
-									wrapperIfTrue={<CardWrapper className="py-3 px-4" />}
+									wrapperIfTrue={<CardWrapper className="p-3" />}
 									wrapperIfFalse={
-										<div className="py-3 px-4 text-gray-400" />
+										<div className="p-3 text-gray-400" />
 									}
 								>
 									<NavItem

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MainArticle = () => {
 	return (
 		<div className="articles__main-card h-full">
-			<div className="articles__main-card-text">
+			<div className="articles__main-card-text mr-2">
 				<div className="flow-y-1">
 					<h3 className="text-sm text-gray-400 font-bold">
 						Built by developers
